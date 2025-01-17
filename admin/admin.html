@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="viewport">
+        <!-- 侧边栏 -->
+        <div id="sidebar">
+            <header>
+                <a href="#">我的应用</a>
+            </header>
+            <ul class="nav">
+                <li>
+                    <a href="#" data-target="dashboard">
+                        仪表盘
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="shortcuts">
+                        快捷方式
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="overview">
+                        概览
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="events">
+                        事件
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="about">
+                        关于
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="services">
+                        服务
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="contact">
+                        联系我们
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 内容区域 -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">测试用户</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div id="dashboard" class="page">
+                    <h1>仪表盘内容</h1>
+                    <p>这是仪表盘的内容。</p>
+                </div>
+                <div id="shortcuts" class="page">
+                    <h1>快捷方式内容</h1>
+                    <p>这是快捷方式的内容。</p>
+                </div>
+                <div id="overview" class="page">
+                    <h1>概览内容</h1>
+                    <p>这是概览的内容。</p>
+                </div>
+                <div id="events" class="page">
+                    <h1>事件内容</h1>
+                    <p>这是事件的内容。</p>
+                </div>
+                <div id="about" class="page">
+                    <h1>关于内容</h1>
+                    <p>这是关于的内容。</p>
+                </div>
+                <div id="services" class="page">
+                    <h1>服务内容</h1>
+                    <p>这是服务的内容。</p>
+                </div>
+                <div id="contact" class="page">
+                    <h1>联系我们内容</h1>
+                    <p>这是联系我们的内容。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+</body>
+</html>

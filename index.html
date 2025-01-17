@@ -1,0 +1,59 @@
+<!--登录页面-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="login/css/login.css">                              <!--专属CSS-->
+    </head>
+
+    <body>
+        <header class="header">
+            <nav>
+                <ul>
+                    <li><a href="home/html/home.html">关于Tinyu</a></li>
+                    <li><a href="find/find.html">tinyu的小记</a>
+                    <li><a href="learing_log/test.php">Wallpaper</a></li>
+                    <li><a href="#contact">联系</a></li>
+                    <li><a href="#about">关于</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="login-form">
+
+            <form action ="login/php/login.php" method="post">                          <!--表单提交给login.php处理-->
+
+                <h1>Welcome guys</h1>
+
+                <div class="input-wrap in-1">
+                    <input name="nick_name" type="text" placeholder="Your email" spellcheck="false" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>                                                               <!--用户昵称-->
+
+                <div class="input-wrap in-2">
+                    <input name="password"  type="password" placeholder="Your password " spellcheck="false" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>                                                               <!--用户密钥-->
+
+                <div class="rem">
+                    <p>
+                        <input name="remember" type="checkbox">
+                        Remember me
+                    </p>
+                    <a href ="login/html/reget.html">Forget password?</a>
+                </div>                                                              <!--是否记住登录，和遗忘密码链接-->
+
+                <button type="submit" >login</button>
+
+                <p class="reg">
+                    <a>Don't have an account?</a>
+                    <a href ="login/html/register.html">Register now</a >
+                </p>                                                                <!--注册界面跳转-->
+
+            </form>
+        </section>
+    </body>
+</html>

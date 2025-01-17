@@ -1,0 +1,73 @@
+body {
+    height: 100vh; /* 设置页面高度为视口高度的 100% */
+    margin: 0; /* 移除默认外边距 */
+    overflow: hidden; /* 隐藏页面的纵向滚动条 */
+
+}
+.body {
+    display: flex; /* 使用 Flexbox 布局，以便纵向排列子元素 */
+    justify-content: space-between; /* 子元素之间的间距 */
+    height: 100vh; /* 设置页面高度为视口高度的 100% */
+    margin: 0; /* 移除默认外边距 */
+    background-color: #9795f0; /* 背景色设置为 #9795f0 */
+    overflow: hidden;
+}
+
+.body .find {
+    text-align: center; /* 文本居中 */
+    position: relative; /* 固定定位 */
+    left: 0; /* 靠左放置 */
+    width: 300px; /* 宽度为 300px */
+    height: 100%; /* 高度为 100% */
+    background: #9795f0; /* 背景色保持一致 */
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+#find h1 {
+    width: 100%; /* 设置宽度为其父元素的 100% */
+    margin: 20px ; /* 去掉外边距 */
+    padding: 0; /* 去掉内边距 */
+}
+/* 添加样式使 div 为粉色 */
+#fileLinks {
+    text-align: left; /* 文本左对齐 */
+    background-color: paleturquoise; /* 背景色设置为浅蓝绿色 */
+    padding: 10px 20px 10px 10px; /* 内边距 */
+    border-radius: 8px; /* 圆角边框 */
+    margin-top: 20px; /* 顶部外边距 */
+    max-width: 400px; /* 最大宽度 */
+    max-height: 600px; /* 最大高度 */
+    position: fixed; /* 固定定位 */
+    overflow-y: auto; /* 纵向滚动 */
+    overflow-x: hidden; /* 隐藏横向滚动条 */
+}
+
+a {
+    color: dimgray; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
+
+a:hover {
+    text-decoration: underline; /* 悬停效果下划线 */
+}
+
+.body .content {
+    flex: 1; /* 占据剩余空间 */
+    padding: 15px; /* 内边距 */
+    overflow: auto; /* 如果内容超出，则允许滚动 */
+    height: calc(100vh - 50px); /* 100vh 减去其他部分高度 */
+    overflow-y: hidden;
+}
+
+.body .content .title1 {
+    text-align: center; /* 中间对齐 */
+    background: cornflowerblue; /* 背景 */
+    margin: 0; /* 去掉外边距 */
+    padding: 1px 1px; /* 去掉内边距 */
+}
+iframe {
+    width: 100%; /* 占满父级宽度 */
+    height: 86%; /* 占满父级高度 */
+    border: none; /* 去掉边框 */
+}

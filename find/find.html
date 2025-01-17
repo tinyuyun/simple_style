@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>MD 文件查询</title>
+    <link rel="stylesheet" href="find.css">
+</head>
+<body>
+<div class="body">
+    <div class="find"id="find">
+        <h1>--tinyu的小记查询--</h1>
+        <button style="padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;"id="toggleButton">获取文档</button>
+        <a href="/index.html" style="text-decoration: none;">
+            <button style="padding: 10px 15px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                返回首页
+            </button>
+        </a>
+        <!-- 粉色的 div 框 -->
+        <div id="fileLinks"></div>
+    </div>
+
+    <div class="content">
+        <div class="title1">
+            <h2>readme</h2>
+        </div>
+        <iframe name="content-frame" src="../md_online"></iframe>
+    </div>
+</div>
+<script src="find.js"></script>
+</body>
+</html>
