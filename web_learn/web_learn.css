@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+body{
+    background-color: #e9d5ca;
+    height: 100vh;
+    display: flex;/*flex布局*/
+    align-items: center;/*水平居中对齐*/
+    justify-content: center;/*上下居中对齐*/
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.select-menu{
+    width: 300px;
+    cursor: pointer;
+    position: relative;
+}
+.select{
+    background-color: #201e1e;
+    padding: 20px;
+    color: white;
+    font-weight: 500;/*加粗*/
+    border-radius:10px;/*盒子边角*/
+    display: flex;/*水平布局*/
+    align-items: center;/*水平居中*/
+    justify-content: space-between;/*两端对齐*/
+}
+.options-list{
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius:10px;
+    margin-top: 4px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    transition: 0.4s linear 0.2s;
+    height: 0;
+    /*height: 0;*/
+}
+.option{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    transition: 0.3s ease-in-out 0.2s;
+}
+.option:hover,
+.option.selected{
+    color: #007bff;
+}
+.options-list::-webkit-scrollbar{
+    width: 4px;
+    background-color: white;
+}
+.options-list::-webkit-scrollbar-thumb{
+    background-color: #007bff;
+}
+.options-list.active{
+    height: 100px;
+}
